@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.zhu.ecommerce</groupId>
+        <artifactId>ecommerce-springcloud</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>e-commerce-mvc-config</artifactId>
+    <packaging>jar</packaging>
+
+    <!-- 模块名及描述信息 -->
+    <name>e-commerce-mvc-config</name>
+    <description>通用配置模块</description>
+
+    <dependencies>
+        <!-- 引入 Web 功能 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+           <groupId>com.zhu.ecommerce</groupId>
+            <artifactId>e-commerce-commom</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
