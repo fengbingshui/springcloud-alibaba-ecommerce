@@ -11,7 +11,6 @@ import java.util.List;
 @Slf4j
 @Service
 public class NacosClientService {
-
     /**
      * 由springcloud提供的接口，alibaba具体实现
      */
@@ -25,5 +24,4 @@ public class NacosClientService {
         log.info("request nacos client to get service instance info: [{}]", serviceId);
         return discoveryClient.getInstances(serviceId);
     }
-
 }
