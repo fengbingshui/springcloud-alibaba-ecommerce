@@ -6,6 +6,10 @@ server:
 spring:
   application:
     name: e-commerce-admin
+  security:
+    user:
+      name: zhu
+      password: 123456
   cloud:
     nacos:
       discovery:
@@ -15,6 +19,8 @@ spring:
         metadata:
           management:
             context-path: ${server.servlet.context-path}/actuator
+          user.name: zhu
+          user.password: 123456
   thymeleaf:
     check-template: false
     check-template-location: false
