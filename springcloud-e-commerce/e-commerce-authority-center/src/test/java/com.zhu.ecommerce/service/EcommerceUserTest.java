@@ -26,7 +26,7 @@ public class EcommerceUserTest {
     public void createUserRecord() {
 
         EcommerceUser ecommerceUser = new EcommerceUser();
-        ecommerceUser.setUsername("zhu@qq.com");
+        ecommerceUser.setUsername("zhu2@qq.com");
         ecommerceUser.setPassword(MD5.create().digestHex("12345678"));
         ecommerceUser.setExtraInfo("{}");
         log.info("save user: [{}]",
